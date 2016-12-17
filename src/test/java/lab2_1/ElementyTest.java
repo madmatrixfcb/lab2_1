@@ -13,12 +13,12 @@ public class ElementyTest {
 	public void PierwszyElementTest() {
 		int key = 3;
 		int[] seq = { 2, 5, 7 };
-		SearchResult searchResult;
-		searchResult = BinarySearch.search(key, seq);
+		SearchResult wynikWyszukiwania;
+		wynikWyszukiwania = BinarySearch.search(key, seq);
 		if (seq.length == 0) {
 			throw new IllegalArgumentException("Dlugosc sekwencji wynosi 0");
 		}
-		assertEquals(0, searchResult.getPosition());
+		assertEquals(0, wynikWyszukiwania.getPosition());
 	}
 
 }
