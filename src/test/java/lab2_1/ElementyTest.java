@@ -90,5 +90,16 @@ public class ElementyTest {
 		assertTrue(wynikWyszukiwania.isFound());
 		assertEquals(0, wynikWyszukiwania.getPosition());
 	}
+	
+	@Test
+	public void SekwencjaMinMinusJedenTest() {
+		int key = 2;
+		int min = Integer.MIN_VALUE-1;
+		int[] seq = { min, -5, -2, 0, 2, 5, 7 };
+		SearchResult wynikWyszukiwania;
+		wynikWyszukiwania = BinarySearch.search(key, seq);
+		assertTrue(wynikWyszukiwania.isFound());
+		assertEquals(4, wynikWyszukiwania.getPosition());
+	}
 
 }
