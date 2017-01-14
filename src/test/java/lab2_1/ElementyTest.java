@@ -18,7 +18,7 @@ public class ElementyTest {
 		assertEquals(0, wynikWyszukiwania.getPosition());
 	}
 
-	@Test(expected = IllegalArgumentException.class)
+	@Test
 	public void SrodkowyElementTest() {
 		int key = 5;
 		int[] seq = { 2, 5, 7 };
