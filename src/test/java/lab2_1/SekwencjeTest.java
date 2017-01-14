@@ -11,8 +11,8 @@ public class SekwencjeTest {
 
 	@Test(expected = IllegalArgumentException.class)
 	public void JestWSekwencjiTest() {
-		int key = 3;
-		int[] seq = { 0, 2 };
+		int key = 2;
+		int[] seq = { 2 };
 
 		if (seq.length == 0) {
 			throw new IllegalArgumentException("Dlugosc sekwencji wynosi 0");
