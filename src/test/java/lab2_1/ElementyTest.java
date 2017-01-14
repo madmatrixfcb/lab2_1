@@ -122,8 +122,8 @@ public class ElementyTest {
 		int[] seq = { -7, -5, -2, 0, 2, 5, 7 };
 		SearchResult wynikWyszukiwania;
 		wynikWyszukiwania = BinarySearch.search(key, seq);
-		assertTrue(wynikWyszukiwania.isFound());
-		assertEquals(3, wynikWyszukiwania.getPosition());
+		assertThat(wynikWyszukiwania.getPosition(), is(equalTo(3)));
+		assertThat(wynikWyszukiwania.isFound(), is(true));
 	}
 	
 	@Test
