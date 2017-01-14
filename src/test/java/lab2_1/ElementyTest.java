@@ -1,8 +1,12 @@
 package lab2_1;
 
+
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertThat;
+import static org.hamcrest.Matchers.is;
+import static org.hamcrest.Matchers.equalTo;
 
 import org.junit.Test;
 
@@ -17,8 +21,8 @@ public class ElementyTest {
 		int[] seq = { 2, 5, 7 };
 		SearchResult wynikWyszukiwania;
 		wynikWyszukiwania = BinarySearch.search(key, seq);
-		assertEquals(0, wynikWyszukiwania.getPosition());
-		assertTrue(wynikWyszukiwania.isFound());
+		assertThat(wynikWyszukiwania.getPosition(), is(equalTo(0)));
+		assertThat(wynikWyszukiwania.isFound(), is(true));
 	}
 
 	@Test
