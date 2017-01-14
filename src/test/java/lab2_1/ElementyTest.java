@@ -11,7 +11,7 @@ public class ElementyTest {
 
 	@Test
 	public void PierwszyElementTest() {
-		int key = 3;
+		int key = 2;
 		int[] seq = { 2, 5, 7 };
 		SearchResult wynikWyszukiwania;
 		wynikWyszukiwania = BinarySearch.search(key, seq);
