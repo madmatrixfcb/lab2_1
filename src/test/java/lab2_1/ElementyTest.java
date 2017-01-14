@@ -79,5 +79,16 @@ public class ElementyTest {
 		}
 		
 	}
+	
+	@Test
+	public void SekwencjaMaxPlusJedenTest() {
+		int key = 2;
+		int max = Integer.MAX_VALUE+1;
+		int[] seq = { 2, 5, 7, 9, max };
+		SearchResult wynikWyszukiwania;
+		wynikWyszukiwania = BinarySearch.search(key, seq);
+		assertTrue(wynikWyszukiwania.isFound());
+		assertEquals(0, wynikWyszukiwania.getPosition());
+	}
 
 }
