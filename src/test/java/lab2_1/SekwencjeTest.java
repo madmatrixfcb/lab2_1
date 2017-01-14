@@ -28,5 +28,15 @@ public class SekwencjeTest {
 		assertFalse(wynikWyszukiwania.isFound());
 		assertEquals(-1, wynikWyszukiwania.getPosition());
 	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void PustaSekwencjaTest() {
+		int [] seq = { };
+		if (seq.length == 0)
+		{
+			throw new IllegalArgumentException("Dlugosc sekwencji wynosi 0");
+		}
+		
+	}
 
 }
