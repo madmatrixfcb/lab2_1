@@ -1,6 +1,7 @@
 package lab2_1;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
@@ -46,7 +47,7 @@ public class ElementyTest {
 		SearchResult wynikWyszukiwania;
 		wynikWyszukiwania = BinarySearch.search(key, seq);
 		assertEquals(-1, wynikWyszukiwania.getPosition());
-		
+		assertFalse(wynikWyszukiwania.isFound());
 	}
 
 }
