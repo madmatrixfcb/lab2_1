@@ -36,7 +36,7 @@ public class ElementyTest {
 		wynikWyszukiwania = BinarySearch.search(key, seq);
 		assertEquals(2, wynikWyszukiwania.getPosition());
 	}
-	@Test(expected = IllegalArgumentException.class)
+	@Test
 	public void ElementPozaTest() {
 		int key = 9;
 		int[] seq = { 2, 5, 7 };
