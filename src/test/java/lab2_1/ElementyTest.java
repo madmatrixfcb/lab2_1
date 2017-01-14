@@ -43,7 +43,11 @@ public class ElementyTest {
 		if (seq.length == 0) {
 			throw new IllegalArgumentException("Dlugosc sekwencji wynosi 0");
 		}
-		assertEquals(1, wynikWyszukiwania.getPosition());
+		assertEquals(2, wynikWyszukiwania.getPosition());
+	}
+	@Test(expected = IllegalArgumentException.class)
+	public void ElementPozaTest() {
+		
 	}
 
 }
