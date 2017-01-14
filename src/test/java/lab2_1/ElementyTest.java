@@ -20,7 +20,7 @@ public class ElementyTest {
 		}
 		assertEquals(0, wynikWyszukiwania.getPosition());
 	}
-	
+
 	@Test(expected = IllegalArgumentException.class)
 	public void SrodkowyElementTest() {
 		int key = 5;
@@ -30,10 +30,13 @@ public class ElementyTest {
 		if (seq.length == 0) {
 			throw new IllegalArgumentException("Dlugosc sekwencji wynosi 0");
 		}
-		assertEquals(1, wynikWyszukiwania.getPosition());	
-		
+		assertEquals(1, wynikWyszukiwania.getPosition());
+
 	}
 	
-	
+	@Test(expected = IllegalArgumentException.class)
+	public void OstatniElementTest() {
+		
+	}
 
 }
