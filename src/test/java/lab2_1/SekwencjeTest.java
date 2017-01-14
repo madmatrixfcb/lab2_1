@@ -19,14 +19,10 @@ public class SekwencjeTest {
 		assertEquals(0, wynikWyszukiwania.getPosition());
 	}
 
-	@Test(expected = IllegalArgumentException.class)
+	@Test
 	public void NieJestWSekwencjiTest() {
 		int key = 3;
 		int[] seq = { 2 };
-
-		if (seq.length == 0) {
-			throw new IllegalArgumentException("Dlugosc sekwencji wynosi 0");
-		}
 		SearchResult wynikWyszukiwania;
 		wynikWyszukiwania = BinarySearch.search(key, seq);
 		assertFalse(wynikWyszukiwania.isFound());
