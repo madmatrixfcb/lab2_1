@@ -71,8 +71,8 @@ public class ElementyTest {
 		int[] seq = { 2 };
 		SearchResult wynikWyszukiwania;
 		wynikWyszukiwania = BinarySearch.search(key, seq);
-		assertFalse(wynikWyszukiwania.isFound());
-		assertEquals(-1, wynikWyszukiwania.getPosition());
+		assertThat(wynikWyszukiwania.getPosition(), is(equalTo(-1)));
+		assertThat(wynikWyszukiwania.isFound(), is(false));
 	}
 
 	@Test(expected = IllegalArgumentException.class)
