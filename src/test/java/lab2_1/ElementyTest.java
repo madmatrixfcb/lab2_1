@@ -9,7 +9,7 @@ import edu.iis.mto.bsearch.SearchResult;
 
 public class ElementyTest {
 
-	@Test(expected = IllegalArgumentException.class)
+	@Test
 	public void PierwszyElementTest() {
 		int key = 3;
 		int[] seq = { 2, 5, 7 };
