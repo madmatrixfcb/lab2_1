@@ -10,7 +10,7 @@ import edu.iis.mto.bsearch.SearchResult;
 public class SekwencjeTest {
 
 	@Test
-	public void JestWSekwencjiTest() {
+	public void PojElemJestWSekwencjiTest() {
 		int key = 2;
 		int[] seq = { 2 };
 		SearchResult wynikWyszukiwania;
@@ -20,7 +20,7 @@ public class SekwencjeTest {
 	}
 
 	@Test
-	public void NieJestWSekwencjiTest() {
+	public void PojElemNieJestWSekwencjiTest() {
 		int key = 3;
 		int[] seq = { 2 };
 		SearchResult wynikWyszukiwania;
