@@ -121,5 +121,16 @@ public class ElementyTest {
 		assertTrue(wynikWyszukiwania.isFound());
 		assertEquals(3, wynikWyszukiwania.getPosition());
 	}
+	
+	@Test
+	public void SekwencjaMaxTest() {
+		int key = 2;
+		int max = Integer.MAX_VALUE;
+		int[] seq = { 2, 5, 7, 9, max };
+		SearchResult wynikWyszukiwania;
+		wynikWyszukiwania = BinarySearch.search(key, seq);
+		assertTrue(wynikWyszukiwania.isFound());
+		assertEquals(0, wynikWyszukiwania.getPosition());
+	}
 
 }
