@@ -1,6 +1,7 @@
 package lab2_1;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
@@ -16,6 +17,7 @@ public class ElementyTest {
 		SearchResult wynikWyszukiwania;
 		wynikWyszukiwania = BinarySearch.search(key, seq);
 		assertEquals(0, wynikWyszukiwania.getPosition());
+		assertTrue(wynikWyszukiwania.isFound());
 	}
 
 	@Test
