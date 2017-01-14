@@ -27,7 +27,7 @@ public class ElementyTest {
 		SearchResult wynikWyszukiwania;
 		wynikWyszukiwania = BinarySearch.search(key, seq);
 		assertEquals(1, wynikWyszukiwania.getPosition());
-
+		assertTrue(wynikWyszukiwania.isFound());
 	}
 	
 	@Test
