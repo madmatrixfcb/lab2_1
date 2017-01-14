@@ -41,8 +41,8 @@ public class ElementyTest {
 		int[] seq = { 2, 5, 7 };
 		SearchResult wynikWyszukiwania;
 		wynikWyszukiwania = BinarySearch.search(key, seq);
-		assertEquals(2, wynikWyszukiwania.getPosition());
-		assertTrue(wynikWyszukiwania.isFound());
+		assertThat(wynikWyszukiwania.getPosition(), is(equalTo(2)));
+		assertThat(wynikWyszukiwania.isFound(), is(true));
 	}
 
 	@Test
