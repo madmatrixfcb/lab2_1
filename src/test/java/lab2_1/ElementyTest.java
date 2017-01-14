@@ -28,7 +28,7 @@ public class ElementyTest {
 
 	}
 	
-	@Test(expected = IllegalArgumentException.class)
+	@Test
 	public void OstatniElementTest() {
 		int key = 7;
 		int[] seq = { 2, 5, 7 };
