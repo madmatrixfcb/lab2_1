@@ -101,5 +101,15 @@ public class ElementyTest {
 		assertTrue(wynikWyszukiwania.isFound());
 		assertEquals(4, wynikWyszukiwania.getPosition());
 	}
+	
+	@Test
+	public void ElementUjemnyTest() {
+		int key = -2;
+		int[] seq = { -7, -5, -2, 0, 2, 5, 7 };
+		SearchResult wynikWyszukiwania;
+		wynikWyszukiwania = BinarySearch.search(key, seq);
+		assertTrue(wynikWyszukiwania.isFound());
+		assertEquals(2, wynikWyszukiwania.getPosition());
+	}
 
 }
