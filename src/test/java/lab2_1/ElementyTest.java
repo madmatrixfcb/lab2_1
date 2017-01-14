@@ -27,9 +27,6 @@ public class ElementyTest {
 		int[] seq = { 2, 5, 7 };
 		SearchResult wynikWyszukiwania;
 		wynikWyszukiwania = BinarySearch.search(key, seq);
-		if (seq.length == 0) {
-			throw new IllegalArgumentException("Dlugosc sekwencji wynosi 0");
-		}
 		assertEquals(1, wynikWyszukiwania.getPosition());
 
 	}
