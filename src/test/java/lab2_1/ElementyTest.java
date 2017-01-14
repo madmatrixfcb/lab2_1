@@ -20,5 +20,12 @@ public class ElementyTest {
 		}
 		assertEquals(0, wynikWyszukiwania.getPosition());
 	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void SrodkowyElementTest() {
+		
+	}
+	
+	
 
 }
