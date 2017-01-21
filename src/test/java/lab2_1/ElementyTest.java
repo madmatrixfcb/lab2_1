@@ -21,7 +21,7 @@ public class ElementyTest {
 		int[] seq = { 2, 5, 7 };
 		SearchResult wynikWyszukiwania;
 		wynikWyszukiwania = BinarySearch.search(key, seq);
-		assertThat(wynikWyszukiwania.getPosition(), is(equalTo(0)));
+		assertThat(wynikWyszukiwania.getPosition(), is(equalTo(1)));
 		assertThat(wynikWyszukiwania.isFound(), is(true));
 	}
 
@@ -31,7 +31,7 @@ public class ElementyTest {
 		int[] seq = { 2, 5, 7 };
 		SearchResult wynikWyszukiwania;
 		wynikWyszukiwania = BinarySearch.search(key, seq);
-		assertThat(wynikWyszukiwania.getPosition(), is(equalTo(1)));
+		assertThat(wynikWyszukiwania.getPosition(), is(equalTo(2)));
 		assertThat(wynikWyszukiwania.isFound(), is(true));
 	}
 
@@ -41,7 +41,7 @@ public class ElementyTest {
 		int[] seq = { 2, 5, 7 };
 		SearchResult wynikWyszukiwania;
 		wynikWyszukiwania = BinarySearch.search(key, seq);
-		assertThat(wynikWyszukiwania.getPosition(), is(equalTo(2)));
+		assertThat(wynikWyszukiwania.getPosition(), is(equalTo(3)));
 		assertThat(wynikWyszukiwania.isFound(), is(true));
 	}
 
@@ -61,7 +61,7 @@ public class ElementyTest {
 		int[] seq = { 2 };
 		SearchResult wynikWyszukiwania;
 		wynikWyszukiwania = BinarySearch.search(key, seq);
-		assertThat(wynikWyszukiwania.getPosition(), is(equalTo(0)));
+		assertThat(wynikWyszukiwania.getPosition(), is(equalTo(1)));
 		assertThat(wynikWyszukiwania.isFound(), is(true));
 	}
 
@@ -91,7 +91,7 @@ public class ElementyTest {
 		int[] seq = { 2, 5, 7, 9, max };
 		SearchResult wynikWyszukiwania;
 		wynikWyszukiwania = BinarySearch.search(key, seq);
-		assertThat(wynikWyszukiwania.getPosition(), is(equalTo(0)));
+		assertThat(wynikWyszukiwania.getPosition(), is(equalTo(1)));
 		assertThat(wynikWyszukiwania.isFound(), is(true));
 	}
 
@@ -102,7 +102,7 @@ public class ElementyTest {
 		int[] seq = { min, -5, -2, 0, 2, 5, 7 };
 		SearchResult wynikWyszukiwania;
 		wynikWyszukiwania = BinarySearch.search(key, seq);
-		assertThat(wynikWyszukiwania.getPosition(), is(equalTo(4)));
+		assertThat(wynikWyszukiwania.getPosition(), is(equalTo(5)));
 		assertThat(wynikWyszukiwania.isFound(), is(true));
 	}
 
@@ -112,7 +112,7 @@ public class ElementyTest {
 		int[] seq = { -7, -5, -2, 0, 2, 5, 7 };
 		SearchResult wynikWyszukiwania;
 		wynikWyszukiwania = BinarySearch.search(key, seq);
-		assertThat(wynikWyszukiwania.getPosition(), is(equalTo(2)));
+		assertThat(wynikWyszukiwania.getPosition(), is(equalTo(3)));
 		assertThat(wynikWyszukiwania.isFound(), is(true));
 	}
 
@@ -122,7 +122,7 @@ public class ElementyTest {
 		int[] seq = { -7, -5, -2, 0, 2, 5, 7 };
 		SearchResult wynikWyszukiwania;
 		wynikWyszukiwania = BinarySearch.search(key, seq);
-		assertThat(wynikWyszukiwania.getPosition(), is(equalTo(3)));
+		assertThat(wynikWyszukiwania.getPosition(), is(equalTo(4)));
 		assertThat(wynikWyszukiwania.isFound(), is(true));
 	}
 	
@@ -133,7 +133,7 @@ public class ElementyTest {
 		int[] seq = { 2, 5, 7, 9, max };
 		SearchResult wynikWyszukiwania;
 		wynikWyszukiwania = BinarySearch.search(key, seq);
-		assertThat(wynikWyszukiwania.getPosition(), is(equalTo(0)));
+		assertThat(wynikWyszukiwania.getPosition(), is(equalTo(1)));
 		assertThat(wynikWyszukiwania.isFound(), is(true));
 	}
 	
@@ -144,7 +144,7 @@ public class ElementyTest {
 		int[] seq = { min, -5, -2, 0, 2, 5, 7 };
 		SearchResult wynikWyszukiwania;
 		wynikWyszukiwania = BinarySearch.search(key, seq);
-		assertThat(wynikWyszukiwania.getPosition(), is(equalTo(4)));
+		assertThat(wynikWyszukiwania.getPosition(), is(equalTo(5)));
 		assertThat(wynikWyszukiwania.isFound(), is(true));
 	}
 
